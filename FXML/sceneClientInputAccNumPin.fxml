@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="682.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atmmachine.SceneController">
+   <children>
+      <Label layoutX="102.0" layoutY="97.0" prefHeight="19.0" prefWidth="113.0" text="Account Number">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="102.0" layoutY="163.0" prefHeight="19.0" prefWidth="113.0" text="Pin Code">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="oneButton" layoutX="190.0" layoutY="239.0" mnemonicParsing="false" onAction="#numberClickedButton" prefHeight="55.0" prefWidth="88.0" text="1" />
+      <Button fx:id="twoButton" layoutX="298.0" layoutY="239.0" mnemonicParsing="false" onAction="#numberClickedButton" prefHeight="55.0" prefWidth="88.0" text="2" />
+      <Button fx:id="threeButton" layoutX="410.0" layoutY="239.0" mnemonicParsing="false" onAction="#numberClickedButton" prefHeight="55.0" prefWidth="88.0" text="3" />
+      <Button fx:id="fourButton" layoutX="188.0" layoutY="306.0" mnemonicParsing="false" onAction="#numberClickedButton" prefHeight="55.0" prefWidth="88.0" text="4" />
+      <Button fx:id="fiveButton" layoutX="296.0" layoutY="306.0" mnemonicParsing="false" onAction="#numberClickedButton" prefHeight="55.0" prefWidth="88.0" text="5" />
+      <Button fx:id="sixButton" layoutX="408.0" layoutY="306.0" mnemonicParsing="false" onAction="#numberClickedButton" prefHeight="55.0" prefWidth="88.0" text="6" />
+      <Button fx:id="sevenButton" layoutX="186.0" layoutY="370.0" mnemonicParsing="false" onAction="#numberClickedButton" prefHeight="55.0" prefWidth="88.0" text="7" />
+      <Button fx:id="eightButton" layoutX="294.0" layoutY="370.0" mnemonicParsing="false" onAction="#numberClickedButton" prefHeight="55.0" prefWidth="88.0" text="8" />
+      <Button fx:id="nineButton" layoutX="406.0" layoutY="370.0" mnemonicParsing="false" onAction="#numberClickedButton" prefHeight="55.0" prefWidth="88.0" text="9" />
+      <Button fx:id="delButton" layoutX="184.0" layoutY="436.0" mnemonicParsing="false" onAction="#deleteButton" prefHeight="55.0" prefWidth="88.0" text="DEL" />
+      <Button fx:id="zeroButton" layoutX="292.0" layoutY="436.0" mnemonicParsing="false" onAction="#numberClickedButton" prefHeight="55.0" prefWidth="88.0" text="0" />
+      <Button fx:id="okButton" layoutX="404.0" layoutY="436.0" mnemonicParsing="false" onAction="#initializeAccNumberPinCodeButton" prefHeight="55.0" prefWidth="88.0" text="OK" />
+      <TextField fx:id="accNumbTextField" layoutX="228.0" layoutY="94.0" onMouseClicked="#setFocusedAccNumTextField1" prefHeight="26.0" prefWidth="323.0" />
+      <TextField fx:id="pinCodeTextField" layoutX="228.0" layoutY="155.0" onMouseClicked="#setFocusedPinCodeTextField2" prefHeight="33.0" prefWidth="323.0" />
+      <Label fx:id="warningLabel" layoutX="228.0" layoutY="197.0" prefHeight="17.0" prefWidth="245.0" textFill="#e41212" />
+      <Button layoutX="26.0" layoutY="25.0" mnemonicParsing="false" onAction="#goToSceneInsertCard" prefHeight="26.0" prefWidth="51.0" text="Exit" />
+   </children>
+</AnchorPane>
